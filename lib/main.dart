@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:know_it/Signup.dart';
 
-void main() => runApp(new MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'Flutter Demo',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: new Signup()
-    );
-
-  }
+void main() {
+  runApp(new MaterialApp(
+    // Title
+      title: "Schemes",
+      // Home
+      home: new Scaffold(
+        // Appbar
+        appBar: new AppBar(
+          // Title
+          title: new Text("Know It"),
+        ),
+        // Body
+        body: new Signup()
+      )));
 }
